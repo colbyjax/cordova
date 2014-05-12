@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.css" />
+        <title>Testing JQuery Mobile</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.2.js"></script>
+        <script type="text/javascript">app.initialize();</script>
+        <script type="text/javascript">
+			$(function() {
+				$("#test").html("JQuery Working!");
+			});
+			
+        </script>
+    
+    </head>
+    <body>
+    	<div data-role="page">
+	    	
+	    	<div data-role="header">
+	    		<h1>My Title</h1>
+	    	</div><!-- /header -->
+	    	
+	    	<div data-role="content">
+	    		<p>Hello World!</p>
+	    		<ul data-role="listview" data-inset="true" data-filter="true">
+	    			<li><a href="#">Acura</a></li>
+	    			<li><a href="#">Audi</a></li>
+	    			<li><a href="#">BMW</a></li>
+	    			<li><a href="#">Cadillac</a></li>
+	    			<li><a href="#">Ferrari</a></li>
+	    		</ul>
+	    		<form>
+	    			<label for="slider-0">Input slider:</label>
+	    			<input type="range" name="slider" id="slider-0" value="25" min="0" max="10" />
+	    			<a href="#" data-role="button" data-icon="star" data-theme="a">Button</a>
+	    		</form>
+	    	</div><!-- /content -->
+	    	
+	    	<div data-role="footer">
+	    		<h4>My Footer</h4>
+	    	</div><!-- footer -->
+    	
+    	</div><!-- /page -->
+    	
+    </body>
+</html>
